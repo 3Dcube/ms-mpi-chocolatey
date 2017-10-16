@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <id>ms-mpi</id>
+    <version>8.1.12438.1084</version>
+    <packageSourceUrl>https://github.com/3Dcube/ms-mpi-chocolatey</packageSourceUrl>
+    <owners>Vladislav Nemichev</owners>
+    <!-- ============================== -->
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <title>Microsoft MPI</title>
+    <authors>MICROSOFT SOFTWARE</authors>
+    <projectUrl>https://www.microsoft.com/en-us/download/details.aspx?id=55494</projectUrl>
+    <licenseUrl>https://raw.githubusercontent.com/3Dcube/ms-mpi-chocolatey/master/tools/LICENSE.txt</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://msdn.microsoft.com/en-us/library/bb524831(v=vs.85).aspx</docsUrl>
+    <tags>mpi ms-mpi</tags>
+    <summary>Microsoft MPI (MS-MPI) is a Microsoft implementation of the Message Passing Interface standard for developing and running parallel applications on the Windows platform.</summary>
+    <description>
+# Microsoft MPI
+Microsoft MPI (MS-MPI) is a Microsoft implementation of the [Message Passing Interface standard](http://www.mpi-forum.org/) for developing and running parallel applications on the Windows platform.
+
+MS-MPI offers several benefits:
+* Ease of porting existing code that uses [MPICH](http://www.mpich.org/).
+* Security based on Active Directory Domain Services.
+* High performance on the Windows operating system.
+* Binary compatibility across different types of interconnectivity options.
+
+## MS-MPI downloads
+The following are current downloads for MS-MPI:
+* [MS-MPI v8.1](http://go.microsoft.com/FWLink/p/?LinkID=389556) (new!) - see [Release notes](https://msdn.microsoft.com/en-us/library/mt147726(v=vs.85).aspx)
+* [Debugger for MS-MPI Applications with HPC Pack 2012 R2](http://go.microsoft.com/FWLink/p/?LinkID=390711)
+
+Earlier versions of MS-MPI are available from the Microsoft Download Center.
+
+## Community resources
+* [Windows HPC MPI Forum](http://social.microsoft.com/Forums/en-US/home?forum=windowshpcmpi)
+* [Contact the MS-MPI Team](mailto:askmpi@microsoft.com)
+
+## Microsoft high performance computing resources
+* Featured tutorial: [How to compile and run a simple MS-MPI program](http://blogs.technet.com/b/windowshpc/archive/2015/02/02/how-to-compile-and-run-a-simple-ms-mpi-program.aspx)
+* Featured guide: [Set up a Windows RDMA cluster with HPC Pack and A8 and A9 instances to run MPI applications](https://azure.microsoft.com/documentation/articles/virtual-machines-windows-hpcpack-cluster-rdma/)
+* [Microsoft High Performance Computing for Developers](https://msdn.microsoft.com/en-us/library/ff976568.aspx)
+* [Microsoft HPC Pack (Windows HPC Server) Technical Library](https://technet.microsoft.com/library/cc514029)
+* [Azure HPC Scenarios](https://www.microsoft.com/hpc)
+
+## Related topics
+[MPI Reference](https://msdn.microsoft.com/en-us/library/dn473458(v=vs.85).aspx)
+    </description>
+    <!-- =============================== -->
+
+    <dependencies>
+      <dependency id="chocolatey" version="0.9.10" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
