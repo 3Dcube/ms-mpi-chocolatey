@@ -8,7 +8,7 @@ $packageArgs = @{
 
     softwareName   = 'Microsoft MPI (8.1.12438.1084)'
 
-    silentArgs     = "-unattend -force -full -log `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`""
+    silentArgs     = "-unattend -force -full"
     validExitCodes = @(0)
 }
 
